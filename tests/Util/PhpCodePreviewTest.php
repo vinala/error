@@ -1,6 +1,6 @@
 <?php
 
-namespace Kuria\Error\Util;
+namespace Vinala\Error\Util;
 
 class PhpCodePreviewTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Kuria\Error\Screen;
+namespace Vinala\Error\Screen;
 
-use Kuria\Error\FatalErrorHandlerInterface;
-use Kuria\Error\Util\Debug;
+use Vinala\Error\FatalErrorHandlerInterface;
+use Vinala\Error\Util\Debug;
 use Kuria\Event\EventEmitter;
 
 /**

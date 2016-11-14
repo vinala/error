@@ -1,6 +1,6 @@
 <?php
 
-namespace Kuria\Error\Screen;
+namespace Vinala\Error\Screen;
 
 class CliErrorScreenTest extends \PHPUnit_Framework_TestCase
 {

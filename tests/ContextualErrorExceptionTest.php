@@ -1,6 +1,6 @@
 <?php
 
-namespace Kuria\Error;
+namespace Vinala\Error;
 
 class ContextualErrorExceptionTest extends \PHPUnit_Framework_TestCase
 {

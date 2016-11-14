@@ -1,8 +1,8 @@
 <?php
 
-namespace Kuria\Error;
+namespace Vinala\Error;
 
-use Kuria\Error\FatalErrorHandlerInterface;
+use Vinala\Error\FatalErrorHandlerInterface;
 
 class ErrorHandlerTest extends \PHPUnit_Framework_TestCase
 {
@@ -27,7 +27,7 @@ class ErrorHandlerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException        Kuria\Error\ContextualErrorException
+     * @expectedException        Vinala\Error\ContextualErrorException
      * @expectedExceptionMessage Something went wrong
      */
     public function testOnErrorWithContext()

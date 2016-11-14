@@ -54,7 +54,7 @@ Makes handling and debugging PHP errors suck less.
 
 ## <a name="usage"></a> Usage example
 
-    use Kuria\Error\ErrorHandler;
+    use Vinala\Error\ErrorHandler;
 
     $debug = true; // true during development, false in production
     error_reporting(E_ALL | E_STRICT); // configure the error reporting
@@ -83,7 +83,7 @@ Possible events emitted by the `ErrorHandler` class:
 - emitted when a PHP errors occurs
 - arguments:
     1. `object $exception`
-        - instance of `ErrorException` or `Kuria\Error\ContextualErrorException`
+        - instance of `ErrorException` or `Vinala\Error\ContextualErrorException`
     2. `bool $debug`
     3. `bool &$suppressed`
         - reference to the suppressed state of the error
@@ -196,7 +196,7 @@ Possible events emitted by the `CliErrorScreen` class:
 
 Logging unhandled errors into a file.
 
-    use Kuria\Error\Util\Debug;
+    use Vinala\Error\Util\Debug;
 
     $errorHandler->on('fatal', function ($exception, $debug) {
         $logFilePath = sprintf('./errors_%s.log', $debug ? 'debug' : 'prod');
@@ -230,7 +230,7 @@ Examples for the web error screen.
 
 Changing default labels of the non-debug error screen:
 
-    use Kuria\Error\Screen\WebErrorScreen;
+    use Vinala\Error\Screen\WebErrorScreen;
 
     $errorHandler->on('fatal', function ($exception, $debug, $screen) {
        if (!$debug && $screen instanceof WebErrorScreen) {
@@ -243,7 +243,7 @@ Changing default labels of the non-debug error screen:
 
 Adding customized section to the debug screen:
 
-    use Kuria\Error\Screen\WebErrorScreen;
+    use Vinala\Error\Screen\WebErrorScreen;
 
     $errorHandler->on('fatal', function ($exception, $debug, $screen) {
        if ($debug && $screen instanceof WebErrorScreen) {

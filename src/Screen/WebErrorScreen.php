@@ -1,11 +1,11 @@
 <?php
 
-namespace Kuria\Error\Screen;
+namespace Vinala\Error\Screen;
 
-use Kuria\Error\ContextualErrorException;
-use Kuria\Error\FatalErrorHandlerInterface;
-use Kuria\Error\Util\Debug;
-use Kuria\Error\Util\PhpCodePreview;
+use Vinala\Error\ContextualErrorException;
+use Vinala\Error\FatalErrorHandlerInterface;
+use Vinala\Error\Util\Debug;
+use Vinala\Error\Util\PhpCodePreview;
 use Kuria\Event\EventEmitter;
 
 /**
@@ -560,7 +560,7 @@ HTML;
             // call
             if (isset($frame['type'], $frame['class'])) {
                 $call = "{$frame['class']}{$frame['type']}";
-                if ('onError' === $frame['function'] && is_a($frame['class'], 'Kuria\Error\ErrorHandler', true)) {
+                if ('onError' === $frame['function'] && is_a($frame['class'], 'Vinala\Error\ErrorHandler', true)) {
                     $renderExtras = false;
                 }
             } else {

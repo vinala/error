@@ -1,6 +1,6 @@
 <?php
 
-namespace Kuria\Error;
+namespace Vinala\Error;
 
 /**
  * Fatal error handler interface

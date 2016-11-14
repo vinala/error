@@ -1,6 +1,6 @@
 <?php
 
-namespace Kuria\Error\Util;
+namespace Vinala\Error\Util;
 
 /**
  * Debug utility class
@@ -468,7 +468,7 @@ class Debug
      */
     public static function isAutoloadingActive()
     {
-        $testClass = 'Kuria\Error\Debug__NonexistentClass';
+        $testClass = 'Vinala\Error\Debug__NonexistentClass';
         
         $autoloadingActive = false;
         $autoloadChecker = function ($class) use (&$autoloadingActive, $testClass) {

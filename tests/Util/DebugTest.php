@@ -1,6 +1,6 @@
 <?php
 
-namespace Kuria\Error\Util;
+namespace Vinala\Error\Util;
 
 class DebugTest extends \PHPUnit_Framework_TestCase
 {
@@ -78,7 +78,7 @@ class DebugTest extends \PHPUnit_Framework_TestCase
 
         $assertions = array(
             array($testPropertyObject, <<<EXPECTED
-object(Kuria\Error\Util\TestPropertiesA)[8] {
+object(Vinala\Error\Util\TestPropertiesA)[8] {
     public [dynamic] => "hello"
     private [private] => "privateA"
     private [privateNonShadowed] => "privateNonShadowedA"
@@ -91,7 +91,7 @@ object(Kuria\Error\Util\TestPropertiesA)[8] {
 EXPECTED
             ),
             array(new \DateTime('2015-01-01 00:00 UTC'), 'object(DateTime) "Thu, 01 Jan 2015 00:00:00 +0000"'),
-            array(new TestToString(), 'object(Kuria\Error\Util\TestToString)[0] "foo bar"'),
+            array(new TestToString(), 'object(Vinala\Error\Util\TestToString)[0] "foo bar"'),
             array($testKeyEscapesObject, <<<'EXPECTED'
 object(stdClass)[2] {
     public [key-binary-\001\002] => "b"
@@ -100,7 +100,7 @@ object(stdClass)[2] {
 EXPECTED
             ),
             array(new TestDebugInfo(), <<<EXPECTED
-object(Kuria\Error\Util\TestDebugInfo)[1] {
+object(Vinala\Error\Util\TestDebugInfo)[1] {
     [foo] => "bar"
 }
 EXPECTED
@@ -123,8 +123,8 @@ EXPECTED
         $expected = <<<EXPECTED
 object(stdClass)[1] {
     public [nestedObject] => object(stdClass)[3] {
-        public [bar] => object(Kuria\Error\Util\TestPropertiesA)[7]
-        public [baz] => object(Kuria\Error\Util\TestToString)[0] "foo bar"
+        public [bar] => object(Vinala\Error\Util\TestPropertiesA)[7]
+        public [baz] => object(Vinala\Error\Util\TestToString)[0] "foo bar"
         public [foo] => array[3]
     }
 }

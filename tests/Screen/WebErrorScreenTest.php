@@ -1,8 +1,8 @@
 <?php
 
-namespace Kuria\Error\Screen;
+namespace Vinala\Error\Screen;
 
-use Kuria\Error\ContextualErrorException;
+use Vinala\Error\ContextualErrorException;
 
 class WebErrorScreenTest extends \PHPUnit_Framework_TestCase
 {
