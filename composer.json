@@ -1,5 +1,5 @@
 {
-    "name": "kuria/error",
+    "name": "youssef/error",
     "description": "Makes handling and debugging PHP errors suck less.",
     "keywords": ["error", "exception", "error handler", "exception handler", "fatal", "debug", "debugger"],
     "license": "MIT",
@@ -9,7 +9,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kuria\\Error\\": "src"
+            "Youssef\\Error\\": "src"
         }
     }
 }
